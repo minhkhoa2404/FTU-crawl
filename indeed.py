@@ -19,8 +19,7 @@ prefs = {
 }
 options.add_experimental_option("prefs", prefs)
 
-driver = uc.Chrome(
-    options=options, driver_executable_path=r"C:\Users\MY-PC\Downloads\Compressed\chromedriver.exe")
+driver = uc.Chrome(options=options)
 
 # Regular expression for salary. For example, $1000-$2000 a year -> Only return 1000-2000
 salary_regex = r"[\d-]+"
